@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <style>
+        .tile-many-lines,
+        .text-many-lines {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!--top-action-box-->
+        <div class="top-action-box cnt-section">
+            <div class="inner-wrap">
+                <a href="" class="action-title">Найдете дешевле — </a>
+                <div class="action-sticker">снизим цену!</div>
+                <a href="" class="btn-action-ico ico-close-small btn-popup-close" onclick="document.body.classList.add('top-hide');return false;"></a>
+            </div>
+        </div>
+        <!--/top-action-box-->
+        <!-- header -->
+        <header class="header">
+            <!--header-top-panel-->
+            <div class="header-top-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="inner-wrap">
+                        <div class="yd-inner-wrap">
+                            <div class="elm-yd-review">4.8</div>
+                        </div>
+                        <div class="location-inner-wrap">
+                            <a href="" class="btn button-clear">
+                                <div class="button-ico">
+                                    <img src="./img/icons/location.svg" alt="">
+                                </div>
+                                <div class="button-title">Санкт-Петербург</div>
+                            </a>
+                        </div>
+                        <div class="menu-inner-wrap">
+                            <ul class="menu">
+                                <li><a href="" class="btn-menu">
+                                        <div class="button-title">Доставка и оплата</div>
+                                    </a></li>
+                                <li><a href="" class="btn-menu">
+                                        <div class="button-title">Гарантия возврата</div>
+                                    </a></li>
+                                <li><a href="" class="btn-menu">
+                                        <div class="button-title">Клиентам</div>
+                                    </a></li>
+                                <li><a href="" class="btn-menu">
+                                        <div class="button-title">Контакты</div>
+                                    </a></li>
+                                <li><a href="" class="elm-sticker"><span class="text-succefull">%</span>Акции</a></li>
+                            </ul>
+                        </div>
+                        <div class="contacts-inner-wrap">
+                            <div class="phone-wrap">
+                                <a href="tel:88126402922" class="link-phone">+7(812) 640-29-22</a>
+                            </div>
+                            <div class="soc-wrap">
+                                <a href="" class="btn button-clear button-tg">
+                                    <div class="button-title">Telegram</div>
+                                    <div class="button-ico">
+                                        <img src="./img/icons/soc-tg.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="soc-wrap">
+                                <a href="" class="btn button-clear button-wa">
+                                    <div class="button-title">WhatsApp</div>
+                                    <div class="button-ico">
+                                        <img src="./img/icons/soc-wa.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/header-top-panel-->
+            <!--header-main-panel-->
+            <div class="header-main-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="logo-inner-wrap">
+                        <a href="" class="logo">
+                            <img src="./img/main/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="catalog-inner-wrap popup-catalog-wrap js-popup-wrap">
+                        <a href="" class="btn btn-popup js-btn-popup-toggle">
+                            <div class="button-ico">
+                                <img src="./img/icons/catalog.svg" alt="">
+                            </div>
+                            <div class="button-title">Каталог</div>
+                        </a>
+                        <div class="popup-content-block js-popup-block">
+                            33333
+                        </div>
+                    </div>
+                    <div class="search-inner-wrap">
+                        <form action="/" class="frm-main-search">
+                            <div class="field-input">
+                                <input type="text" class="form-input" placeholder="Искать товары">
+                            </div>
+                            <div class="field-button">
+                                <button type="submit" class="btn">Найти</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="top-inner-wrap">
+                        <div class="soc-wrap">
+                            <a href="" class="btn button-clear button-tg">
+                                <div class="button-ico">
+                                    <img src="./img/icons/soc-tg.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="soc-wrap">
+                            <a href="" class="btn button-clear button-wa">
+                                <div class="button-ico">
+                                    <img src="./img/icons/soc-wa.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="total-wrap">
+                            <div class="elm-sticker color-gray">870₽ бонусов</div>
+                        </div>
+                    </div>
+                    <div class="actions-inner-wrap">
+                        <div class="action-wrap action-compare">
+                            <a href="" class="btn button-gray button-action" data-count="3">
+                                <div class="button-ico">
+                                    <img src="./img/icons/compare.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="action-wrap action-fav">
+                            <a href="" class="btn button-gray button-action" data-count="3">
+                                <div class="button-ico">
+                                    <img src="./img/icons/fav.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="action-wrap action-cart">
+                            <a href="" class="btn button-gray button-action" data-count="3">
+                                <div class="button-ico">
+                                    <img src="./img/icons/cart.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="action-wrap action-phone">
+                            <a href="" class="btn button-gray button-action">
+                                <div class="button-ico">
+                                    <img src="./img/icons/phone.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="action-wrap action-user">
+                            <a href="" class="btn button-gray button-action">
+                                <div class="button-title">Войти</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/header-main-panel-->
+        </header>
+        <!-- /header -->
+        <!--mobile-panel-box-->
+        <div class="mobile-panel-box cnt-section">
+            <div class="inner-wrap">
+                <div class="action-wrap">
+                    <a href="" class="btn-menu-mobile">
+                        <div class="button-ico">
+                            <img src="./img/icons/m-home.svg" alt="">
+                        </div>
+                        <div class="button-title">Главная</div>
+                    </a>
+                </div>
+                <div class="action-wrap">
+                    <a href="" class="btn-menu-mobile">
+                        <div class="button-ico">
+                            <img src="./img/icons/m-menu.svg" alt="">
+                        </div>
+                        <div class="button-title">Каталог</div>
+                    </a>
+                </div>
+                <div class="action-wrap">
+                    <a href="" class="btn-menu-mobile">
+                        <div class="button-ico">
+                            <img src="./img/icons/m-cart.svg" alt="">
+                        </div>
+                        <div class="button-title">Корзина</div>
+                    </a>
+                </div>
+                <div class="action-wrap">
+                    <a href="" class="btn-menu-mobile">
+                        <div class="button-ico">
+                            <img src="./img/icons/m-user.svg" alt="">
+                        </div>
+                        <div class="button-title">Профиль</div>
+                    </a>
+                </div>
+                <div class="action-wrap popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-menu-mobile js-btn-popup-toggle">
+                        <div class="button-ico">
+                            <img src="./img/icons/m-more.svg" alt="">
+                        </div>
+                        <div class="button-title">Еще</div>
+                    </a>
+                    <div class="popup-content-block js-popup-block">
+                        <a href="" class="btn-popup-close btn-action-ico ico-close-main js-btn-popup-close"></a>
+                        <div class="popup-title-wrap">
+                            <div class="popup-title">Еще</div>
+                        </div>
+                        <div class="popup-content-wrap">
+                            <div class="location-inner-wrap">
+                                <a href="" class="btn button-clear">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/location.svg" alt="">
+                                    </div>
+                                    <div class="button-title">Санкт-Петербург</div>
+                                </a>
+                            </div>
+                            <div class="menu-inner-wrap">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="" class="btn-menu">
+                                            <div class="button-title">Доставка и оплата</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-menu">
+                                            <div class="button-title">Гарантия возврата</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-menu active">
+                                            <div class="button-title">Липецк</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-menu">
+                                            <div class="button-title">Клиентам</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-menu">
+                                            <div class="button-title"><span class="button-action-att">%</span> Акции</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-menu">
+                                            <div class="button-title">Избранное</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-menu">
+                                            <div class="button-title">Сравнение</div>
+                                            <div class="button-counter">4</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contacts-inner-wrap">
+                                <div class="phone-wrap">
+                                    <a href="tel:88126402922" class="link-phone">+7(812) 640-29-22</a>
+                                </div>
+                                <div class="soc-wrap">
+                                    <a href="" class="btn button-clear button-tg">
+                                        <div class="button-ico">
+                                            <img src="./img/icons/soc-tg.svg" alt="">
+                                        </div>
+                                    </a>
+                                    <a href="" class="btn button-clear button-wa">
+                                        <div class="button-ico">
+                                            <img src="./img/icons/soc-wa.svg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/mobile-panel-box-->
+
+        <!-- page -->
+        <div class="page-full">
+            <br><br><br><br><br>
+            <ul>
+                333
+                <li>--------</li>
+            </ul>
+            <br><br><br><br><br>
+        </div>
+        <!-- /page -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner-wrap">
+                <div class="form-inner-wrap">
+                    <div class="frm-title-wrap">
+                        <div class="frm-title">Подпишитесь и&nbsp;узнавайте первыми об акциях и&nbsp;новых предложениях</div>
+                    </div>
+                    <div class="frm-inner-wrap">
+                        <form action="/" class="frm-main-subscribe">
+                            <input type="email" class="form-input" placeholder="Email">
+                            <button type="submit" class="btn button-dark">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-panel-wrap">
+                    <div class="info-inner-wrap">
+                        <div class="logo-wrap">
+                            <a href="" class="logo">
+                                <img src="./img/main/logo-light.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="soc-wrap">
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-vk.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-inst.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-inner-wrap">
+                        <div class="menu-wrap">
+                            <div class="menu-title">Категории</div>
+                            <ul class="menu">
+                                <li><a href="">Каталог</a></li>
+                                <li><a href="">Коллекции</a></li>
+                                <li><a href="">Подборки</a></li>
+                                <li><a href="">Новинки</a></li>
+                                <li><a href="">Скидки </a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-wrap">
+                            <div class="menu-title">Покупателям</div>
+                            <ul class="menu">
+                                <li><a href="">Оплата и доставка</a></li>
+                                <li><a href="">Гарантия возврата</a></li>
+                                <li><a href="">Контакты компании</a></li>
+                                <li><a href="">Подарочные сертификаты</a></li>
+                                <li><a href="">Программа лояльности</a></li>
+                                <li><a href="">Вопрос - ответ</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-wrap">
+                            <div class="menu-title">О компании</div>
+                            <ul class="menu">
+                                <li><a href="">О бренде iBox</a></li>
+                                <li><a href="">Отзывы клиентов</a></li>
+                                <li><a href="">Договор оферты</a></li>
+                                <li><a href="">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-wrap">
+                            <div class="menu-title">Телефоны</div>
+                            <p>
+                                <a href="tel:88126402922" class="link-phone">+7(812) 640-29-22</a>
+                                <br>
+                                <a href="tel:88126402922" class="link-phone">+7(812) 640-29-22</a>
+                            </p>
+                            <div class="menu-title">Адрес склада</div>
+                            <p>г. Санкт-Петербург <br>, Кирочная 9, БЦ Арсенал</p>
+                            <div class="menu-title">Время работы</div>
+                            <p>Пн-Пт: с 10:00 до 20:00 <br>Сб-Вс с 11:00 до 19:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-info-wrap">
+                    <p>© iService - техника Apple 2006-2021. Стоимость указана при оплате наличными.</p>
+                </div>
+            </div>
+            <div class="btn-action-ico ico-arrow-up button-up js-btn-up"></div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+    <!-- /wrap -->
+
+
+
+</body>
+
+</html>

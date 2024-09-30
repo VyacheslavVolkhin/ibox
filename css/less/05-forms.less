@@ -1,0 +1,142 @@
+/* ----------------------------------- *\
+			forms elements styles
+\* ----------------------------------- */
+.frm-main-subscribe {
+	display: block;
+	position: relative;
+	line-height: 1;
+	.form-input {
+		height: 50px;
+		border-radius: 12px;
+		padding-left: 13px;
+		border: 2px solid #fff;
+		background: #fff;
+	}
+	.btn {
+		height: 46px;
+		padding: 0 12px;
+		min-width: 135px;
+		position: absolute;
+		top: 50%;right: 2px;
+		margin-top: -23px;
+		font-size: 18px;
+	}
+}
+.frm-main-search {
+	display: flex;
+	position: relative;
+	.field-input {
+		flex: 1;
+		position: relative;
+		overflow: hidden;
+	}
+	.field-button {
+		flex-shrink: 0;
+		position: relative;
+		overflow: hidden;
+	}
+	.btn {
+		height: 46px;
+		border-radius: 0 12px 12px 0;
+		padding: 0 12px 0 12px;
+		min-width: 78px;
+		font-size: 16px;
+		border-width: 2px;;
+	}
+	.form-input {
+		height: 46px;
+		border: none;
+		border-radius: 0;
+		border-radius: 12px 0 0 12px;
+		border-width: 2px;
+		border: 2px solid var(--clr-att);
+		border-right: none;
+		padding: 0 10px 0 45px;
+		font-size: 16px;
+		background: #fff url(../img/icons/search.svg) 13px center / 24px auto no-repeat;
+	}
+}
+.frm-row,
+.frm-field,
+.frm-row-submit {
+    display: flex;
+    flex-wrap: wrap;
+	position: relative;
+	line-height: 1;
+}
+.frm-field {
+    display: block;
+    width: 100%;
+}
+.frm-select {
+	position: relative;
+	display: block;
+	overflow: hidden;
+    line-height: 1;
+	input {
+		display: block;
+		position: absolute;
+		top: 0;left: 0;
+		width: 0;height: 0;
+		opacity: 0;
+		margin: 0;
+		padding: 0;
+		&:checked {
+			&~label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		display: block;
+		position: relative;
+		cursor: pointer;
+        &:before, &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+		&:after {
+			opacity: 0;
+		}
+	}
+}
+
+
+.frm-select {
+	input {
+		&:checked {
+			&~label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		&:before, &:after {
+			
+		}
+		&:after {
+			border-radius: 0;
+			border: none;
+			background: url(../img/icons/chk.svg) center / 24px auto no-repeat;
+			opacity: 0;
+		}
+	}
+	a {
+		color: inherit;
+		&:hover {
+			color: var(--clr-att);
+		}
+	}
+}
+@media (min-width: 480px) {
+	.frm-main-search {
+		.btn {
+			min-width: 110px;
+		}
+	}
+}
