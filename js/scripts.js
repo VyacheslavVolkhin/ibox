@@ -1,6 +1,50 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
+	//files add
+	const fileBlocks = document.querySelectorAll('.js-field-file');
+
+	fileBlocks.forEach(fileBlock => {
+		const fileInput = fileBlock.querySelector('.js-field-input');
+		const fileAttachButton = fileBlock.querySelector('.js-file-button-attach');
+		const fileDeleteButton = fileBlock.querySelector('.js-file-button-del');
+		const fileName = fileBlock.querySelector('.file-name');
+
+		fileAttachButton.addEventListener('click', function() {
+			fileInput.click();
+		});
+
+		fileInput.addEventListener('change', function() {
+			if (fileInput.files.length > 0) {
+				fileName.textContent = fileInput.files[0].name;
+				fileBlock.classList.add('file-active');
+			} else {
+				fileName.textContent = '';
+				fileBlock.classList.remove('file-active');
+			}
+		});
+
+		fileDeleteButton.addEventListener('click', function(e) {
+			e.preventDefault();
+			fileName.textContent = '';
+			fileBlock.classList.remove('file-active');
+			fileInput.value = null;
+		});
+	});
+
+
+	// filter actions
+	const filterButtons = document.querySelectorAll('.js-filter-toggle');
+	if (filterButtons.length > 0) {
+	filterButtons.forEach(button => {
+		button.addEventListener("click", function(e) {
+		document.body.classList.toggle("filter-show");
+		e.preventDefault();
+		});
+	});
+	}
+
+
 	//btn tgl
 	let tglButtons = document.querySelectorAll('.js-btn-tgl')
 	for (i = 0;i < tglButtons.length;i++) {
@@ -25,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	const bodyElem = document.querySelector('body')
 	function popupElementsClear() {
 		document.body.classList.remove('menu-show')
-		document.body.classList.remove('filter-show')
 		document.body.classList.remove('search-show')
 		popupElements.forEach(element => element.classList.remove('popup-right'))
 	}

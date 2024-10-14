@@ -16,9 +16,13 @@
 	border: 1px solid var(--clr-border);
 	font-size: 16px;
 	color: var(--clr-title);
+	&.inp-error {
+		border-color: var(--clr-att-alert);
+	}
 }
 textarea.form-input {
-
+	height: 116px;
+	padding-top: 14px;
 }
 select.form-input {
     display: block;
@@ -77,6 +81,40 @@ select.form-input:required:invalid {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 500;
+	&.button-select-main {
+		border-radius: 12px;
+		border-color: var(--clr-border);
+		background-color: #fff;
+		padding: 0 50px 0 14px;
+		font-size: 16px;
+		font-weight: 500;
+		color: var(--clr-title);
+		justify-content: flex-start;
+		text-align: left;
+		&:before {
+			content: "";
+			display: block;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			background: url(../img/icons/arrow-button.svg) center no-repeat;
+			background-size: 32px auto;;
+			rotate: 90deg;
+			top: 50%;right: 12px;
+			transition: all ease 0.2s;
+			margin-top: -12px;
+		}
+		&:hover {
+			border-color: var(--clr-border);
+			color: var(--clr-title);
+			background-color: #fff;
+		}
+		&.active {
+			&:before {
+				rotate: -90deg;
+			}
+		}
+	}
 	&.button-bg-tg {
 		background-color: #36ACEB;
 		border-color: #36ACEB;

@@ -97,6 +97,8 @@ html {
 	overflow: hidden;
 	text-align: center;
 	overflow: hidden;
+	transition: all ease 0.2s;
+	top: 0;left: 0;right: 0;
 	.inner-wrap {
 		display: flex;
 		align-items: center;
@@ -235,6 +237,7 @@ html {
 		width: 52px;height: 52px;
 		position: absolute;
 		top: -26px;right: 20px;
+		z-index: 20;
 	}
 	.button-soc {
 		width: 36px;height: 36px;
@@ -279,6 +282,18 @@ html {
 		order: 3;
 		flex: 1;
 		margin-top: 20px;
+		.frm-field-buttons-list {
+			border: 1px solid var(--clr-border);
+			border-radius: 15px;
+			box-shadow: none;
+			width: calc(100% + 66px);
+			right: auto;
+			margin-top: 15px;
+			.list {
+				height: 452px;
+				max-height: calc(100dvh - 300px);
+			}
+		}
 	}
 	.actions-inner-wrap {
 		order: 4;
@@ -339,6 +354,12 @@ html {
 }
 .header-top-panel {
 	display: none;
+}
+.top-hide {
+	.top-action-box {
+		position: absolute;
+		transform: translateY(-100%);
+	}
 }
 .popup-catalog-wrap {
 	.popup-content-block {
@@ -758,6 +779,10 @@ html {
 			padding-left: 20px;
 			padding-right: 0;
 			margin: 0;
+			.frm-field-buttons-list {
+				width: 100%;
+				min-width: 610px;
+			}
 		}
 		.actions-inner-wrap {
 			margin: 0;
