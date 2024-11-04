@@ -81,6 +81,20 @@ select.form-input:required:invalid {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 500;
+	&.button-toggle {
+		padding-right: 40px;
+		&:before {
+			content: "";
+			display: block;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			background: url(../img/icons/arrow-button-toggle.svg) center no-repeat;
+			background-size: 100% auto;
+			top: 50%;right: 10px;
+			margin-top: -12px;
+		}
+	}
 	&.button-select-main {
 		border-radius: 12px;
 		border-color: var(--clr-border);
@@ -333,6 +347,18 @@ select.form-input:required:invalid {
         }
     }
 }
+[data-add] {
+	&:before {
+		content: attr(data-add);
+	}
+}
+.active {
+	[data-added] {
+		&:before {
+			content: attr(data-added);
+		}
+	}
+}
 .button-counter {
 	display: block;
 	flex-shrink: 0;
@@ -425,6 +451,11 @@ select.form-input:required:invalid {
 			}
 		}
 	}
+	&.ico-cart-add {
+		&:before {
+			background-image: url(../img/icons/cart-add.svg);
+		}
+	}
 	&.ico-compare {
 		&:before {
 			background-image: url(../img/icons/compare-button.svg);
@@ -444,6 +475,16 @@ select.form-input:required:invalid {
 			}
 			&:after {
 				opacity: 1;
+			}
+		}
+	}
+	&.ico-copy {
+		&:before {
+			background-image: url(../img/icons/copy.svg);
+		}
+		&:not(:hover) {
+			&:before {
+				filter: grayscale(100%) opacity(0.6);
 			}
 		}
 	}
