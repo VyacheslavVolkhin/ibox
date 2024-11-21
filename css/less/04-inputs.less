@@ -1,17 +1,79 @@
 /* ----------------------------------- *\
 			inputs elements styles
 \* ----------------------------------- */
-[placeholder]::-webkit-input-placeholder {color: #A9A9BD;}
-[placeholder]:-moz-placeholder {color: #A9A9BD;}
-[placeholder]::-moz-placeholder {color: #A9A9BD;}
-[placeholder]:-ms-input-placeholder {color: #A9A9BD;}
+.frm-att {
+	background: var(--clr-att);
+	color: #fff;
+	[placeholder]::-webkit-input-placeholder {color: fade(#fff, 70);}
+	[placeholder]:-moz-placeholder {color: fade(#fff, 70);}
+	[placeholder]::-moz-placeholder {color: fade(#fff, 70);}
+	[placeholder]:-ms-input-placeholder {color: fade(#fff, 70);}
+	.form-input {
+		background-color: transparent;
+		border: 1px solid rgba(226, 226, 226, 0.30);
+		color: #fff;
+	}
+	.btn {
+		background-color: #fff;
+		border-color: #fff;
+		color: var(--clr-title);
+		&:hover {
+			color: var(--clr-title);
+			background-color: var(--clr-att-light);
+			border-color: var(--clr-att-light);
+		}
+	}
+	.frm-field-file.file-text {
+		.file-inner-wrap {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		.file-name {
+			color: #fff;
+		}
+		.btn {
+			color: #fff;
+			.button-ico {
+				filter: brightness(0) invert(1);
+			}
+			&:hover {
+				color: var(--clr-att-light);
+				.button-ico {
+					filter: brightness(0) invert(1);
+				}
+			}
+		}
+	}
+	.frm-select {
+		label {
+			color: #fff;
+			&:before {
+				background-color: var(--clr-title);
+				border-color: var(--clr-title);
+			}
+			&:after {
+				background-color: transparent;
+			}
+		}
+		a {
+			color: var(--clr-title);
+			&:hover {
+				color: var(--clr-att-light);
+			}
+		}
+	}
+}
+[placeholder]::-webkit-input-placeholder {color: var(--clr-bg-dark);}
+[placeholder]:-moz-placeholder {color: var(--clr-bg-dark);}
+[placeholder]::-moz-placeholder {color: var(--clr-bg-dark);}
+[placeholder]:-ms-input-placeholder {color: var(--clr-bg-dark);}
 .form-input[placeholder] {
     text-overflow: ellipsis;
 }
 .form-input {
     text-overflow: ellipsis;
 	height: 50px;
-	bottom: 0 10px 0 14px;
+	padding: 0 10px 0 14px;
 	border-radius: 12px;
 	border: 1px solid var(--clr-border);
 	font-size: 16px;
@@ -81,6 +143,27 @@ select.form-input:required:invalid {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 500;
+	&.button-ypay {
+		background-color: #2E2F33;
+		border: none;
+		color: #fff;
+		z-index: 2;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08);
+		&:after {
+			width: 342px;height: 41px;
+			position: absolute;
+			bottom: 12px;left: 50%;
+			margin-left: -170px;
+			content: "";
+			display: block;
+			background: url(../img/icons/button-back.svg) center bottom no-repeat;
+			background-size: 100% auto;
+		}
+		.button-ico {
+			width: 54px;height: 24px;
+			filter: none;
+		}
+	}
 	&.button-toggle {
 		padding-right: 40px;
 		&:before {
@@ -93,6 +176,13 @@ select.form-input:required:invalid {
 			background-size: 100% auto;
 			top: 50%;right: 10px;
 			margin-top: -12px;
+		}
+	}
+	&.button-succefull {
+		&:not(:hover) {
+			background-color: var(--clr-att-succefull);
+			border-color: var(--clr-att-succefull);
+			color: var(--clr-title);
 		}
 	}
 	&.button-select-main {
@@ -183,7 +273,7 @@ select.form-input:required:invalid {
 		&:disabled, &.button-disabled {
 			border-color: var(--clr-bg-light);
 			background-color: var(--clr-bg-light);
-			color: #A9A9BD;
+			color: var(--clr-bg-dark);
 		}
 		.button-ico {
 			filter: none;
@@ -306,7 +396,7 @@ select.form-input:required:invalid {
 		padding: 0 2px;
 		min-width: 30px;
 		text-align: center;
-		border: 1px solid #A9A9BD;
+		border: 1px solid var(--clr-bg-dark);
 		font-size: 14px;
 		font-weight: bold;
 		margin: 0 10px;
@@ -429,6 +519,17 @@ select.form-input:required:invalid {
             box-shadow: none;
         }
     }
+	&.ico-del-dark {
+		&:before {
+			background-image: url(../img/icons/del-dark.svg);
+			filter: grayscale(100%) opacity(.5);
+		}
+		&:hover {
+			&:before {
+				filter: none;
+			}
+		}
+	}
 	&.ico-fav {
 		&:before {
 			background-image: url(../img/icons/fav-button.svg);
@@ -486,6 +587,12 @@ select.form-input:required:invalid {
 			&:before {
 				filter: grayscale(100%) opacity(0.6);
 			}
+		}
+	}
+	&.ico-pin {
+		&:before {
+			background-image: url(../img/icons/pin.svg);
+			background-size: 44px auto;;
 		}
 	}
 	&.ico-arrow-up {

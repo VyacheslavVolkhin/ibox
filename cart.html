@@ -28,7 +28,7 @@
 
 <body>
     <!-- wrap -->
-    <div class="wrap">
+    <div class="wrap wrap-header-border">
 
         <!--top-action-box-->
         <div class="top-action-box cnt-section">
@@ -674,300 +674,815 @@
         <!-- page -->
         <div class="page-full">
 
-            <!--breadcrumbs-box-->
-            <div class="breadcrumbs-box">
-                <ol class="menu">
-                    <li><a href="">Главная </a></li>
-                    <li><a href="">Личные данные</a></li>
-                </ol>
+            <!--nav-box-->
+            <div class="nav-box">
+                <a href="" class="btn button-gray">
+                    <div class="button-ico">
+                        <img src="./img/icons/arrow-back.svg" alt="">
+                    </div>
+                    <div class="button-title">Назад к покупкам</div>
+                </a>
             </div>
-            <!--/breadcrumbs-box-->
+            <!--/nav-box-->
+
+            <!--title-box-->
+            <div class="title-box">
+                <div class="title-wrap">
+                    <h1 class="page-title title-medium">Корзина</h1>
+                </div>
+            </div>
+            <!--/title-box-->
 
             <!--content-outer-wrap-->
-            <div class="content-outer-wrap section-lk">
+            <div class="content-outer-wrap section-order">
 
                 <!--content-wrap-->
                 <div class="content-wrap">
-
-                    <!--tiles-orders-box-->
-                    <div class="tiles-orders-box">
+                    <!--tiles-cart-box-->
+                    <div class="tiles-cart-box">
                         <div class="items-wrap">
                             <!--item wrap-->
                             <div class="item-wrap">
-                                <div class="item-tile-order">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-order-inner">
-                                            <div class="tile-order-title">Заказ №87675</div>
-                                            <div class="tile-order-status text-att">Оформлен</div>
+                                <!-- item tile cart -->
+                                <div class="item-tile-cart">
+                                    <div class="tile-photo-wrap">
+                                        <a href="" class="tile-photo photo-contain">
+                                            <img src="./img/cart.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title"><a href="">Смартфон Samsung Galaxy S24 Ultra 5G 12/512Gb Titanium Gray (2 SIM+eSim)</a></div>
                                         </div>
-                                        <div class="tile-order-action">
-                                            <a href="" class="btn button-clear">
-                                                <div class="button-ico">
-                                                    <img src="./img/icons/trash.svg" alt="">
-                                                </div>
+                                        <div class="tile-price-wrap">
+                                            <div class="tile-price" data-unit=" ₽">96 100</div>
+                                            <div class="tile-price price-old" data-unit=" ₽">100 100</div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-actions-wrap">
+                                        <div class="tile-buttons-wrap">
+                                            <a href="" class="btn-action-ico ico-fav js-btn-tgl">
+                                                <div class="button-title" data-add="В избранное" data-added="В избранном"></div>
+                                            </a>
+                                            <a href="" class="btn-action-ico ico-del-dark">
                                                 <div class="button-title">Удалить</div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="tile-content-wrap">
-                                        <div class="tile-inner-item">
-                                            <a href="" class="tile-link"></a>
-                                            <div class="tile-photo-wrap">
-                                                <div class="tile-photo photo-contain">
-                                                    <img src="./img/order01.jpg" alt="">
-                                                </div>
+                                        <div class="tile-counter-wrap">
+                                            <div class="frm-field-counter js-counter">
+                                                <button class="js-button-counter-plus btn button-gray button-plus"></button>
+                                                <button class="js-button-counter-minus btn button-gray button-minus"></button>
+                                                <input type="text" class="form-input js-input-counter" data-unit="шт." data-step="1" data-min="1" data-max="15" disabled value="1">
                                             </div>
-                                            <div class="tile-inner-wrap">
-                                                <div class="tile-info-wrap">
-                                                    <div class="tile-title">Смартфон Samsung Galaxy S24 Ultra 5G 12/512Gb Titanium Gray (2 SIM+eSim)</div>
-                                                    <div class="tile-count">Кол-во: 1 шт.</div>
-                                                </div>
-                                                <div class="tile-price-wrap">
-                                                    <div class="tile-price" data-unit=" ₽">96 100</div>
-                                                    <div class="tile-price price-old" data-unit=" ₽">101 540</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tile-inner-item">
-                                            <a href="" class="tile-link"></a>
-                                            <div class="tile-photo-wrap">
-                                                <div class="tile-photo photo-contain">
-                                                    <img src="./img/order02.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="tile-inner-wrap">
-                                                <div class="tile-info-wrap">
-                                                    <div class="tile-title">Смартфон Apple iPhone 15 Pro Max 512Gb Blue Titanium (2 SIM)
-                                                    </div>
-                                                    <div class="tile-count">Кол-во: 1 шт.</div>
-                                                </div>
-                                                <div class="tile-price-wrap">
-                                                    <div class="tile-price" data-unit=" ₽">96 100</div>
-                                                    <div class="tile-price price-old" data-unit=" ₽">101 540</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tile-footer-wrap">
-                                        <div class="tile-footer-info">
-                                            <div class="tile-footer-title">Адрес получения</div>
-                                            <p>Кирочная, 9, БЦ Арсенал</p>
-                                        </div>
-                                        <div class="tile-footer-info">
-                                            <div class="tile-footer-title">Дата оформления</div>
-                                            <p>14 июня 2021</p>
-                                        </div>
-                                        <div class="tile-footer-info">
-                                            <div class="tile-footer-title">Способ оплаты</div>
-                                            <p>Наличные</p>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- /item tile cart -->
+                                <!--tiles-accessories-box-->
+                                <div class="tiles-accessories-box slider-tabs-buttons-box">
+                                    <div class="tabs-buttons-box js-tabs-nav">
+                                        <div class="scroll-inner-wrap">
+                                            <ul class="menu">
+                                                <li>
+                                                    <a href="" class="btn button-border button-gray active" data-tab="slider01-01">С этим товаром покупают</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="btn button-border button-gray" data-tab="tab01-02">Дополнительные услуги</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- slider 01 -->
+                                    <div class="slider-inner-wrap slider-accessories js-tab-block" data-tab="slider01-01">
+                                        <div class="slider-wrap swiper">
+                                            <div class="btn-action-ico ico-arrow ico-arrow-prev button-slider-accessories-prev"></div>
+                                            <div class="btn-action-ico ico-arrow ico-arrow-next button-slider-accessories-next"></div>
+                                            <div class="slider swiper-wrapper">
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc01.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол защитный vlp Silicone Case для iPhone 14 Pro, бирюзовый</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc02.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол Apple MagSafe для iPhone 14 Pro, силикон, «розовый мел»</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc03.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Адаптер питания Apple USB-C 20W
+                                                            </div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc01.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол защитный vlp Silicone Case для iPhone 14 Pro, бирюзовый</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc02.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол Apple MagSafe для iPhone 14 Pro, силикон, «розовый мел»</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc03.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Адаптер питания Apple USB-C 20W
+                                                            </div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc01.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол защитный vlp Silicone Case для iPhone 14 Pro, бирюзовый</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc02.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол Apple MagSafe для iPhone 14 Pro, силикон, «розовый мел»</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc03.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Адаптер питания Apple USB-C 20W
+                                                            </div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc01.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол защитный vlp Silicone Case для iPhone 14 Pro, бирюзовый</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc02.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол Apple MagSafe для iPhone 14 Pro, силикон, «розовый мел»</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc03.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Адаптер питания Apple USB-C 20W
+                                                            </div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slider 01 -->
+                                    <!-- tab 02 -->
+                                    <div class="select-list-wrap js-tab-block" data-tab="tab01-02">
+                                        <div class="frm-select">
+                                            <input type="checkbox" id="select01-01">
+                                            <label for="select01-01">Обменять в Trade-in <span class="elm-helper"></span></label>
+                                        </div>
+                                        <div class="frm-select">
+                                            <input type="checkbox" id="select01-02">
+                                            <label for="select01-02">Гарантийное обслуживание + 1 год — <div class="elm-price price-att" data-unit=" ₽">15 853</div> <span class="elm-helper"></span></label>
+                                        </div>
+                                        <div class="frm-select">
+                                            <input type="checkbox" id="select01-03">
+                                            <label for="select01-03">Проверка товара перед отправкой - <div class="elm-price price-att" data-unit=" ₽">990</div> <span class="elm-helper"></span></label>
+                                        </div>
+                                        <div class="frm-select">
+                                            <input type="checkbox" id="select01-04">
+                                            <label for="select01-04">Перенос данных с одного устройства на другое - <div class="elm-price price-att" data-unit=" ₽">3 500</div> <span class="elm-helper"></span></label>
+                                        </div>
+                                    </div>
+                                    <!-- /tab 02 -->
+                                </div>
+                                <!--/tiles-accessories-box-->
                             </div>
                             <!--/item wrap-->
                             <!--item wrap-->
                             <div class="item-wrap">
-                                <div class="item-tile-order">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-order-inner">
-                                            <div class="tile-order-title">Заказ №87675</div>
-                                            <div class="tile-order-status text-att-succefull">Получен</div>
+                                <!-- item tile cart -->
+                                <div class="item-tile-cart">
+                                    <div class="tile-photo-wrap">
+                                        <a href="" class="tile-photo photo-contain">
+                                            <img src="./img/cart-second.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title"><a href="">Смартфон Apple iPhone 15 Pro Max 512Gb Blue Titanium (2 SIM)</a></div>
                                         </div>
-                                        <div class="tile-order-action">
-                                            <a href="" class="btn button-clear">
-                                                <div class="button-ico">
-                                                    <img src="./img/icons/trash.svg" alt="">
-                                                </div>
+                                        <div class="tile-price-wrap">
+                                            <div class="tile-price" data-unit=" ₽">138 100</div>
+                                            <div class="tile-price price-old" data-unit=" ₽">100 100</div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-actions-wrap">
+                                        <div class="tile-buttons-wrap">
+                                            <a href="" class="btn-action-ico ico-fav js-btn-tgl">
+                                                <div class="button-title" data-add="В избранное" data-added="В избранном"></div>
+                                            </a>
+                                            <a href="" class="btn-action-ico ico-del-dark">
                                                 <div class="button-title">Удалить</div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="tile-content-wrap">
-                                        <div class="tile-inner-item">
-                                            <a href="" class="tile-link"></a>
-                                            <div class="tile-photo-wrap">
-                                                <div class="tile-photo photo-contain">
-                                                    <img src="./img/order01.jpg" alt="">
-                                                </div>
+                                        <div class="tile-counter-wrap">
+                                            <div class="frm-field-counter js-counter">
+                                                <button class="js-button-counter-plus btn button-gray button-plus"></button>
+                                                <button class="js-button-counter-minus btn button-gray button-minus"></button>
+                                                <input type="text" class="form-input js-input-counter" data-unit="шт." data-step="1" data-min="1" data-max="15" disabled value="1">
                                             </div>
-                                            <div class="tile-inner-wrap">
-                                                <div class="tile-info-wrap">
-                                                    <div class="tile-title">Смартфон Samsung Galaxy S24 Ultra 5G 12/512Gb Titanium Gray (2 SIM+eSim)</div>
-                                                    <div class="tile-count">Кол-во: 1 шт.</div>
-                                                </div>
-                                                <div class="tile-price-wrap">
-                                                    <div class="tile-price" data-unit=" ₽">96 100</div>
-                                                    <div class="tile-price price-old" data-unit=" ₽">101 540</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tile-inner-item">
-                                            <a href="" class="tile-link"></a>
-                                            <div class="tile-photo-wrap">
-                                                <div class="tile-photo photo-contain">
-                                                    <img src="./img/order02.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="tile-inner-wrap">
-                                                <div class="tile-info-wrap">
-                                                    <div class="tile-title">Смартфон Apple iPhone 15 Pro Max 512Gb Blue Titanium (2 SIM)
-                                                    </div>
-                                                    <div class="tile-count">Кол-во: 1 шт.</div>
-                                                </div>
-                                                <div class="tile-price-wrap">
-                                                    <div class="tile-price" data-unit=" ₽">96 100</div>
-                                                    <div class="tile-price price-old" data-unit=" ₽">101 540</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tile-footer-wrap">
-                                        <div class="tile-footer-info">
-                                            <div class="tile-footer-title">Адрес получения</div>
-                                            <p>Кирочная, 9, БЦ Арсенал</p>
-                                        </div>
-                                        <div class="tile-footer-info">
-                                            <div class="tile-footer-title">Дата оформления</div>
-                                            <p>14 июня 2021</p>
-                                        </div>
-                                        <div class="tile-footer-info">
-                                            <div class="tile-footer-title">Способ оплаты</div>
-                                            <p>Наличные</p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!--/item wrap-->
-                            <!--item wrap-->
-                            <div class="item-wrap">
-                                <div class="item-tile-order">
-                                    <div class="tile-title-wrap">
-                                        <div class="tile-order-inner">
-                                            <div class="tile-order-title">Заказ №87675</div>
-                                            <div class="tile-order-status text-att-alert">Отменен</div>
-                                        </div>
-                                        <div class="tile-order-action">
-                                            <a href="" class="btn button-clear">
-                                                <div class="button-ico">
-                                                    <img src="./img/icons/trash.svg" alt="">
-                                                </div>
-                                                <div class="button-title">Удалить</div>
-                                            </a>
+                                <!-- /item tile cart -->
+                                <!--tiles-accessories-box-->
+                                <div class="tiles-accessories-box slider-tabs-buttons-box">
+                                    <div class="tabs-buttons-box js-tabs-nav">
+                                        <div class="scroll-inner-wrap">
+                                            <ul class="menu">
+                                                <li>
+                                                    <a href="" class="btn button-border button-gray" data-tab="slider02-01">С этим товаром покупают</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="btn button-border button-gray active" data-tab="tab02-02">Дополнительные услуги</a>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="tile-content-wrap">
-                                        <div class="tile-inner-item">
-                                            <a href="" class="tile-link"></a>
-                                            <div class="tile-photo-wrap">
-                                                <div class="tile-photo photo-contain">
-                                                    <img src="./img/order01.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="tile-inner-wrap">
-                                                <div class="tile-info-wrap">
-                                                    <div class="tile-title">Смартфон Samsung Galaxy S24 Ultra 5G 12/512Gb Titanium Gray (2 SIM+eSim)</div>
-                                                    <div class="tile-count">Кол-во: 1 шт.</div>
-                                                </div>
-                                                <div class="tile-price-wrap">
-                                                    <div class="tile-price" data-unit=" ₽">96 100</div>
-                                                    <div class="tile-price price-old" data-unit=" ₽">101 540</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tile-inner-item">
-                                            <a href="" class="tile-link"></a>
-                                            <div class="tile-photo-wrap">
-                                                <div class="tile-photo photo-contain">
-                                                    <img src="./img/order02.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="tile-inner-wrap">
-                                                <div class="tile-info-wrap">
-                                                    <div class="tile-title">Смартфон Apple iPhone 15 Pro Max 512Gb Blue Titanium (2 SIM)
+                                    <!-- slider 01 -->
+                                    <div class="slider-inner-wrap slider-accessories js-tab-block" data-tab="slider02-01">
+                                        <div class="slider-wrap swiper">
+                                            <div class="btn-action-ico ico-arrow ico-arrow-prev button-slider-accessories-prev"></div>
+                                            <div class="btn-action-ico ico-arrow ico-arrow-next button-slider-accessories-next"></div>
+                                            <div class="slider swiper-wrapper">
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc01.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол защитный vlp Silicone Case для iPhone 14 Pro, бирюзовый</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
                                                     </div>
-                                                    <div class="tile-count">Кол-во: 1 шт.</div>
                                                 </div>
-                                                <div class="tile-price-wrap">
-                                                    <div class="tile-price" data-unit=" ₽">96 100</div>
-                                                    <div class="tile-price price-old" data-unit=" ₽">101 540</div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc02.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол Apple MagSafe для iPhone 14 Pro, силикон, «розовый мел»</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
                                                 </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc03.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Адаптер питания Apple USB-C 20W
+                                                            </div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc01.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол защитный vlp Silicone Case для iPhone 14 Pro, бирюзовый</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc02.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол Apple MagSafe для iPhone 14 Pro, силикон, «розовый мел»</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc03.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Адаптер питания Apple USB-C 20W
+                                                            </div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc01.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол защитный vlp Silicone Case для iPhone 14 Pro, бирюзовый</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc02.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол Apple MagSafe для iPhone 14 Pro, силикон, «розовый мел»</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc03.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Адаптер питания Apple USB-C 20W
+                                                            </div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc01.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол защитный vlp Silicone Case для iPhone 14 Pro, бирюзовый</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc02.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Чехол Apple MagSafe для iPhone 14 Pro, силикон, «розовый мел»</div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
+                                                <!--sl-wrap-->
+                                                <div class="sl-wrap swiper-slide">
+                                                    <div class="item-tile-catalog-accesoories">
+                                                        <a href="" class="tile-link"></a>
+                                                        <div class="tile-photo-wrap">
+                                                            <div class="tile-photo photo-contain">
+                                                                <img src="./img/acc03.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="tile-info-wrap">
+                                                            <div class="tile-title tile-many-lines">Адаптер питания Apple USB-C 20W
+                                                            </div>
+                                                            <div class="tile-price-wrap">
+                                                                <div class="tile-price" data-unit=" ₽">1 490</div>
+                                                                <div class="tile-price price-old" data-unit=" ₽">1 690</div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="" class="tile-button btn btn-action-ico ico-cart-add js-btn-add"></a>
+                                                    </div>
+                                                </div>
+                                                <!--/sl-wrap-->
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tile-footer-wrap">
-                                        <div class="tile-footer-info">
-                                            <div class="tile-footer-title">Адрес получения</div>
-                                            <p>Кирочная, 9, БЦ Арсенал</p>
+                                    <!-- /slider 01 -->
+                                    <!-- tab 02 -->
+                                    <div class="select-list-wrap js-tab-block" data-tab="tab02-02">
+                                        <div class="frm-select">
+                                            <input type="checkbox" id="select02-01">
+                                            <label for="select02-01">Обменять в Trade-in <span class="elm-helper"></span></label>
                                         </div>
-                                        <div class="tile-footer-info">
-                                            <div class="tile-footer-title">Дата оформления</div>
-                                            <p>14 июня 2021</p>
+                                        <div class="frm-select">
+                                            <input type="checkbox" id="select02-02">
+                                            <label for="select02-02">Гарантийное обслуживание + 1 год — <div class="elm-price price-att" data-unit=" ₽">15 853</div> <span class="elm-helper"></span></label>
                                         </div>
-                                        <div class="tile-footer-info">
-                                            <div class="tile-footer-title">Способ оплаты</div>
-                                            <p>Наличные</p>
+                                        <div class="frm-select">
+                                            <input type="checkbox" id="select02-03">
+                                            <label for="select02-03">Проверка товара перед отправкой - <div class="elm-price price-att" data-unit=" ₽">990</div> <span class="elm-helper"></span></label>
+                                        </div>
+                                        <div class="frm-select">
+                                            <input type="checkbox" id="select02-04">
+                                            <label for="select02-04">Перенос данных с одного устройства на другое - <div class="elm-price price-att" data-unit=" ₽">3 500</div> <span class="elm-helper"></span></label>
                                         </div>
                                     </div>
+                                    <!-- /tab 02 -->
                                 </div>
+                                <!--/tiles-accessories-box-->
                             </div>
                             <!--/item wrap-->
                         </div>
                     </div>
-                    <!--/tiles-orders-box-->
-
+                    <!--/tiles-cart-box-->
                 </div>
                 <!--/content-wrap-->
 
                 <!--side-wrap-->
                 <div class="side-wrap">
-
-                    <!--side-menu-box-->
-                    <div class="side-menu-box">
-                        <ul class="menu">
-                            <li>
-                                <a href="" class="btn-menu">
-                                    <div class="button-ico">
-                                        <img src="./img/icons/menu01.svg" alt="">
+                    <!--side-order-box-->
+                    <div class="side-order-box">
+                        <div class="rows-inner-wrap">
+                            <div class="elm-row row-main">
+                                <div class="row-title">2 товара на сумму</div>
+                                <div class="row-value">
+                                    <div class="elm-price" data-unit=" ₽">248 197</div>
+                                </div>
+                            </div>
+                            <div class="elm-row row-light">
+                                <div class="row-title">За наличные <div class="elm-sticker color-green">-10%</div>
+                                </div>
+                                <div class="row-value">
+                                    <div class="elm-price" data-unit=" ₽">223 337</div>
+                                </div>
+                            </div>
+                            <div class="elm-row row-light">
+                                <div class="row-title">В рассрочку</div>
+                                <div class="row-value">
+                                    <div class="elm-price" data-unit=" ₽/мес">6 мес • от 41 367</div>
+                                </div>
+                            </div>
+                            <div class="elm-row row-light">
+                                <div class="row-title">
+                                    <div class="elm-ico">
+                                        <img src="./img/icons/ys.svg" alt="">
                                     </div>
-                                    <div class="button-title">Личные данные</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="btn-menu active">
-                                    <div class="button-ico">
-                                        <img src="./img/icons/menu02.svg" alt="">
+                                    Яндекс Сплит
+                                </div>
+                                <div class="row-value">
+                                    <div class="elm-price" data-unit=" ₽/мес">от 23 367</div>
+                                </div>
+                            </div>
+                            <div class="elm-row row-main">
+                                <div class="row-title">Текущая скидка </div>
+                                <div class="row-value">
+                                    <div class="elm-price price-att" data-unit=" ₽">- 26 000</div>
+                                </div>
+                            </div>
+                            <div class="elm-row row-main">
+                                <div class="row-title">Промокод</div>
+                                <div class="row-value">
+                                    <div class="elm-price price-att" data-unit=" ₽">- 2 000</div>
+                                </div>
+                            </div>
+                            <div class="elm-row row-main">
+                                <div class="row-title">Услуги</div>
+                                <div class="row-value">
+                                    <div class="elm-price" data-unit=" ₽">990</div>
+                                </div>
+                            </div>
+                            <div class="elm-row row-main row-total">
+                                <div class="row-title">Итого</div>
+                                <div class="row-value">
+                                    <div class="elm-price" data-unit=" ₽">248 197</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-inner-wrap">
+                            <a href="" class="btn">Оформить заказ</a>
+                        </div>
+                        <div class="form-inner-wrap">
+                            <div class="frm-main-button">
+                                <div class="field-inner-wrap">
+                                    <div class="field-input">
+                                        <input type="text" class="form-input" placeholder="Введите промокод">
                                     </div>
-                                    <div class="button-title">Мои заказы</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="btn-menu">
-                                    <div class="button-ico">
-                                        <img src="./img/icons/menu03.svg" alt="">
+                                    <div class="field-button">
+                                        <button class="btn button-succefull">Применить</button>
                                     </div>
-                                    <div class="button-title">Избранное</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="btn-menu">
-                                    <div class="button-ico">
-                                        <img src="./img/icons/menu04.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-inner-wrap">
+                            <div class="frm-main-button">
+                                <div class="field-inner-wrap field-error">
+                                    <div class="field-input">
+                                        <input type="text" class="form-input" placeholder="Введите промокод" value="PROMO2023">
                                     </div>
-                                    <div class="button-title">Сравнение <span class="button-counter">4</span></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class="btn-menu button-light">
-                                    <div class="button-ico">
-                                        <img src="./img/icons/menu05.svg" alt="">
+                                    <div class="field-button">
+                                        <button class="btn button-succefull">Применить</button>
                                     </div>
-                                    <div class="button-title">Выход</div>
-                                </a>
-                            </li>
-                        </ul>
+                                </div>
+                                <div class="field-message-error">Указан неправильный промокод</div>
+                            </div>
+                        </div>
+                        <div class="form-inner-wrap">
+                            <div class="frm-main-button">
+                                <div class="field-inner-wrap field-succefull">
+                                    <div class="field-input">
+                                        <input type="text" class="form-input" placeholder="Введите промокод" value="PROMO2023">
+                                    </div>
+                                    <div class="field-button">
+                                        <button class="btn button-succefull">Применить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-inner-wrap">
+                            <div class="frm-select-toggle sel-right">
+                                <input type="checkbox" id="side">
+                                <label for="side">Покупка на юр. лицо</label>
+                            </div>
+                        </div>
                     </div>
-                    <!--/side-menu-box-->
-
+                    <!--/side-order-box-->
+                    <!--side-auth-box-->
+                    <div class="side-auth-box">
+                        <div class="btn button-clear">
+                            <div class="button-ico">
+                                <img src="./img/icons/auth.svg" alt="">
+                            </div>
+                            <div class="button-title"><span class="text-att"><a href="">Авторизуйтесь</a>/<a href="">зарегистрируйтесь</a>,</span> <br> чтобы отслеживать статус заказа</div>
+                        </div>
+                    </div>
+                    <!--/side-auth-box-->
                 </div>
                 <!--/side-wrap-->
 

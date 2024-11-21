@@ -8,6 +8,7 @@
 	--clr-att-alert: #e96161;
 	--clr-bg-light: #F4F4F4;
 	--clr-border: #E2E2E2;
+	--clr-bg-dark: #A9A9BD;
 
 	--min: 360px;
 	--max: 1080px;
@@ -57,6 +58,17 @@ p, ul, ol, table, blockquote, .bq-text {
 }
 li {
 	position: relative;
+	padding-left: 18px;
+	&:before {
+		content: "";
+		display: block;
+		width: 8px;height: 8px;
+		border-radius: 50%;
+		background: var(--clr-att);
+		position: absolute;
+		top: 0.7em;left: 0;
+		margin-top: -4px;
+	}
 }
 .list-check {
 	li {
@@ -173,6 +185,22 @@ h6, .h6-title {
 		margin-bottom: 0;
 	}
 }
+.h1-title {
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: -0.01em;
+	color: var(--clr-title);
+	margin-bottom: 20px;
+}
+.h2-title {
+	font-size: 22px;
+	margin-bottom: 15px;
+	line-height: normal;
+	font-weight: 500;
+	color: var(--clr-title);
+	letter-spacing: normal;
+}
 .title-att-sticker {
 	display: inline-block;
 	position: relative;
@@ -203,6 +231,9 @@ h6, .h6-title {
 		font-weight: 500;
 		letter-spacing: normal;
 	}
+}
+.text-title, .title-title {
+    color: var(--clr-title);
 }
 .text-att, .title-att {
     color: var(--clr-att);
@@ -270,9 +301,19 @@ hr, .hr {
 	:root {
         --paddingContainer: 20px;
     }
+	.h1-title {
+		font-size: 32px;
+		margin-bottom: 30px;
+	}
+	.h2-title {
+		
+	}
 	.page-title {
 		font-size: 32px;
 		margin: 100px 0 30px 0;
+		&.title-medium {
+			font-size: 32px;
+		}
 		&.title-small {
 			font-size: 26px;
 		}

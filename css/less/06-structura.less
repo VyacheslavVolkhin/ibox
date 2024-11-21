@@ -165,7 +165,7 @@ html {
 		font-size: 14px;
 		line-height: 1.25;
 		font-weight: 400;
-		color: #A9A9BD;
+		color: var(--clr-bg-dark);
 		padding: 24px 0 0 0;
 		border-top: 1px solid var(--clr-base);
 	}
@@ -244,6 +244,11 @@ html {
 		width: 36px;height: 36px;
 		flex-shrink: 0;
 		margin-left: 12px;
+	}
+}
+.wrap-header-border {
+	.header {
+		border-bottom: 1px solid var(--clr-border);
 	}
 }
 .header {
@@ -425,12 +430,12 @@ html {
 		height: 68px;
 		font-size: 12px;
 		line-height: 1.25;
-		color: #5B6375;
+		color: var(--clr-base);
 		text-align: center;
 		z-index: 12;
 		position: relative;
 		&:hover {
-			color: #5B6375;
+			color: var(--clr-base);
 		}
 		&.active {
 			color: var(--clr-att);
@@ -578,7 +583,7 @@ html {
 		}
 		.button-action-att {
 			display: inline;
-			color: #1DE082;
+			color: var(--clr-att-succefull);
 		}
 		&:has(.button-action-att) {
 			background-color: var(--clr-title);
